@@ -1,0 +1,62 @@
+@import '../../varRootStyle/varColor.scss';
+
+.Menubar-container {
+    width           : 200px;
+    height          : 810px;
+    box-shadow      : 0px 4px 6px 0px #DBDBDB80;
+    border-radius   : 16px 0px 0px 16px;
+    background-color: $-White;
+    padding         : 0 12px 0;
+
+    & .icon {
+        margin-right: 9px;
+    }
+
+    & .logo {
+        margin           : 32px 60px 66px;
+        width            : 80px;
+        height           : 64px;
+        background-image : url('../../images/logo.png');
+        background-repeat: no-repeat;
+        background-size  : cover;
+    }
+
+    & .menu li {
+        font-size  : 16px;
+        line-height: 24px;
+        font-weight: 600;
+        font-style : normal;
+        color      : $-gray-300;
+        display    : flex;
+        align-items: center;
+        padding    : 12px;
+        cursor     : pointer;
+
+        & .menubar-icon {
+            color: $-gray-200;
+        }
+
+        &.action {
+            background-color: $-Orange-500;
+            font-weight     : 700;
+            color           : $-White;
+            border-radius   : 8px;
+
+            & .menubar-icon {
+                color: $-White;
+            }
+        }
+    }
+
+    & .logout {
+        margin          : 264px 12px 30px;
+        background-color: $-orange-50;
+        padding         : 12px;
+        font-size       : 16px;
+        font-weight     : 600;
+        line-height     : 24px;
+        color           : $-Orange-500;
+        display         : flex;
+        align-items     : center;
+    }
+}
