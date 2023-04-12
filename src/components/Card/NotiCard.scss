@@ -1,0 +1,21 @@
+@import '../../varRootStyle/varColor.scss';
+
+.Noticard-container {
+    font-size       : 16px;
+    line-height     : 24px;
+    margin          : 0 22px 0 22px;
+    padding         : 16px 0 12px;
+    background-color: $-Orange-50;
+    border-bottom   : 1.5px solid $-gray-100;
+
+    & .name {
+        color      : $-Orange-600;
+        font-weight: 700;
+    }
+
+    & .time {
+        color      : $-gray-400;
+        font-weight: 400;
+    }
+
+}

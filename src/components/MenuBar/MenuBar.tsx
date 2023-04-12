@@ -8,7 +8,7 @@ const MenuBar = () => {
             <div className="logo"></div>
             <div className="menu">
                 <ol>
-                    <li className='action'><MdOutlineDashboard className='icon menubar-icon' />Dashboard</li>
+                    <a href='/'><li className='action'><MdOutlineDashboard className='icon menubar-icon' />Dashboard</li></a>
                     <li><MdOutlineDashboard className='icon menubar-icon' />Thiết bị</li>
                     <li><MdOutlineDashboard className='icon menubar-icon' />Dịch vụ</li>
                     <li><MdOutlineDashboard className='icon menubar-icon' />Cấp số</li>

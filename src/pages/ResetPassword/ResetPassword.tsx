@@ -13,11 +13,11 @@ const ResetPassword = () => {
                     <p className="title">Đặt lại mật khẩu</p>
                     <div className="form-field email">
                         <label htmlFor="email">Vui lòng nhập email để đặt lại mật khẩu của bạn *</label>
-                        <Input Type='email' Id='email' Status='Hover' />
+                        <Input Type='email' Id='email' />
                     </div>
                     <div className='confirm'>
-                        <Button content="Hủy" className="btn-cancel" />
-                        <Button content="Tiếp tục" className="btn-continue" />
+                        <Button Content="Hủy" Size='small' Type='hover' Skin='outline' ClassName='btn' />
+                        <Button Content="Tiếp tục" Size='small' Type='hover' Skin='fill' ClassName='btn' />
                     </div>
                 </div>
 

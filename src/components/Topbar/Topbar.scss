@@ -1,0 +1,60 @@
+@import '../../varRootStyle/varColor.scss';
+
+.Topbar-container {
+    width          : 1240px;
+    height         : 88px;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    padding        : 0 64px 0 0px;
+
+    & .left-content {
+        width: 50%;
+    }
+
+    & .right-content {
+        display        : flex;
+        flex-direction : row;
+        align-items    : center;
+        gap            : 24px;
+        width          : 50%;
+        justify-content: flex-end;
+
+        & .img {
+            width        : 40px;
+            height       : 40px;
+            border-radius: 48px;
+        }
+
+        & .content-user {
+            display    : flex;
+            align-items: center;
+            gap        : 8px;
+
+            & .img {
+                width          : 40px;
+                height         : 40px;
+                border-radius  : 48px;
+                background-size: cover;
+            }
+
+            & .content-infor {
+
+                & .top-content {
+                    font-weight: 400;
+                    font-size  : 12px;
+                    line-height: 18px;
+                    color      : $-gray-300;
+                }
+
+                & .bottom-content {
+                    font-weight: 700;
+                    font-size  : 16px;
+                    line-height: 24px;
+                    color      : $-gray-400;
+                }
+            }
+        }
+    }
+}

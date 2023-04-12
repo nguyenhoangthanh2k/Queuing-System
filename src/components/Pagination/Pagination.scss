@@ -1,0 +1,25 @@
+@import '../../varRootStyle/varColor.scss';
+
+.Pagination-container {
+
+    & ul {
+        display       : flex;
+        flex-direction: row;
+
+        & li {
+            width          : 32px;
+            height         : 32px;
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+        }
+
+        & .pagination-content {
+            border-radius: 4px;
+        }
+    }
+
+    & .active {
+        background-color: $-Orange-500;
+    }
+}

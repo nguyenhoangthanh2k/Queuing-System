@@ -22,7 +22,7 @@ const SetNewPassword = () => {
                                 {isShowPassword ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
                             </span>
                         </div> */}
-                        <Input Type='password' Status='Hover' Id='password' Style='Icon' PositionIcon='right' />
+                        <Input Type='password' Id='password' Style='icon' PositionIcon='right' />
                     </div>
                     <div className="form-field confirmPassword">
                         <label htmlFor="confirmPassword">Nhập lại mật khẩu</label>
@@ -33,10 +33,10 @@ const SetNewPassword = () => {
                                 {isShowPassword ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
                             </span>
                         </div> */}
-                        <Input Type='password' Status='Hover' Id='confirmPassword' Style='Icon' PositionIcon='right' />
+                        <Input Type='password' Id='confirmPassword' Style='icon' PositionIcon='right' />
                     </div>
                     <div className='confirm'>
-                        <Button content="Đăng nhập" className="btn-login" />
+                        <Button Content="Đăng nhập" Size='small' Type='hover' Skin='fill' ClassName='btn-login' />
                     </div>
                 </div>
 

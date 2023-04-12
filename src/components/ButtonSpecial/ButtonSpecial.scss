@@ -1,0 +1,29 @@
+@import '../../varRootStyle/varColor.scss';
+
+.ButtonSpecial-container {
+    width           : 80px;
+    height          : 94px;
+    background-color: $-Orange-50;
+    box-shadow      : 0px 0px 6px #E7E9F2;
+    border-radius   : 8px 0px 0px 8px;
+    color           : $-Orange-500;
+    font-size       : 14px;
+    line-height     : 19px;
+    font-weight     : 600;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    padding         : 12px 4px;
+    gap             : 4px;
+    overflow        : hidden;
+    cursor          : pointer;
+
+    & .buttonSpecial-icon {
+        font-size: 24px;
+    }
+
+    & .buttonSpecial-content {
+        display: inline-block;
+    }
+}

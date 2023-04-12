@@ -1,0 +1,23 @@
+@import '../../varRootStyle/varColor.scss';
+
+.Notication-container {
+    width   : 360px;
+    position: absolute;
+    top     : 130%;
+    border  : 1px solid;
+    z-index : 900;
+
+    & .notication-title {
+        height          : 48px;
+        background-color: $-Orange-400;
+        color           : $-White;
+        font-weight     : 700;
+        font-size       : 20px;
+        line-height     : 30px;
+        padding         : 9px 24px;
+    }
+
+    & .notication-content {
+        background-color: $-Orange-50;
+    }
+}

@@ -1,0 +1,84 @@
+@import '../../varRootStyle/varColor.scss';
+
+.DeviceAdd-container {
+
+    & .device-add-content {
+        width           : 1152px;
+        height          : 550px;
+        background-color: $-White;
+        box-shadow      : 2px 2px 8px rgba(232, 239, 244, 0.8);
+        border-radius   : 16px;
+        padding         : 16px 24px;
+
+        & .device-add-title {
+            font-weight  : 700;
+            font-size    : 20px;
+            line-height  : 30px;
+            color        : $-Orange-500;
+            margin-bottom: 20px;
+        }
+
+        & .device-add-content-field {
+            width         : 540px;
+            color         : $-gray-500;
+            font-size     : 16px;
+            line-height   : 24px;
+            font-weight   : 600;
+            display       : flex;
+            gap           : 24px;
+            flex-direction: column;
+
+            &.special {
+                margin-top: 16px;
+            }
+
+            & .device-add-dropdown-item {
+                color: $-gray-500;
+            }
+
+            & .field {
+
+                & .label {
+                    margin-bottom: 8px;
+                }
+
+                & .device-add-input {
+                    width           : 540px;
+                    border          : 1.5px solid $-gray-100;
+                    border-radius   : 8px;
+                    background-color: $-White;
+                }
+
+                & .device-add-input-fullsize {
+                    width           : 1104px;
+                    border          : 1.5px solid $-gray-100;
+                    border-radius   : 8px;
+                    background-color: $-White;
+                }
+            }
+
+        }
+
+        & .device-add-content-top {
+            display: flex;
+            gap    : 10px;
+        }
+
+        & .device-add-note {
+            margin-top : 18px;
+            font-size  : 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color      : $-gray-300;
+        }
+
+
+    }
+
+    & .device-add-confirm {
+        margin-top     : 24px;
+        display        : flex;
+        justify-content: center;
+        gap            : 32px;
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../varRootStyle/varColor.scss';
+
+.Breadcrumb-container {
+    display        : flex;
+    flex-direction : row;
+    align-items    : center;
+    justify-content: flex-start;
+    font-weight    : 700;
+    font-size      : 20px;
+    line-height    : 30px;
+    color          : $-gray-300;
+
+
+    & .space {
+        margin: 0 15px;
+    }
+
+    & .breadcrump-active {
+        color: $-Orange-500;
+    }
+}

@@ -1,0 +1,19 @@
+@import '../../varRootStyle/varColor.scss';
+
+.icon-bell {
+    width           : 32px;
+    height          : 32px;
+    border-radius   : 32px;
+    background-color: $-Orange-50;
+    color           : $-Orange-300;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    cursor          : pointer;
+    position        : relative;
+
+    &.bell-action {
+        background-color: $-Orange-500;
+        color           : $-White;
+    }
+}

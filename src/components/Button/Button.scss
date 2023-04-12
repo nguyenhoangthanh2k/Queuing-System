@@ -1,8 +1,149 @@
-.button {
-    outline: none;
-    border : none;
+@import '../../varRootStyle/varColor.scss';
 
-    &.primary {
-        background-color: blue;
+.button {
+    outline         : none;
+    border          : none;
+    padding         : 10px 24px;
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
+    align-items     : center;
+    gap             : 8px;
+    box-shadow      : 0px 0px 6px #E7E9F2;
+    color           : $-White;
+    border-radius   : 8px;
+    cursor          : pointer;
+    font-style      : normal;
+    background-color: $-White;
+
+    &.small {
+        font-weight: 700;
+        font-size  : 14px;
+        line-height: 19px;
+        height     : 40px;
+
+        &.only {
+            padding: 10px;
+            width  : 40px;
+        }
     }
+
+    &.medium {
+        font-weight: 700;
+        font-size  : 16px;
+        line-height: 22px;
+        height     : 48px;
+
+        &.only {
+            padding: 10px;
+            width  : 48px;
+        }
+    }
+
+    &.large {
+        font-weight: 700;
+        font-size  : 18px;
+        line-height: 25px;
+        height     : 56px;
+
+        &.only {
+            padding: 10px;
+            width  : 56px;
+        }
+    }
+
+    &.disable {
+
+        &.fill {
+            border          : 1px solid $-gray-200;
+            background-color: $-gray-200;
+            cursor          : none;
+        }
+
+        &.outline {
+            border          : 1.5px solid $-gray-300;
+            background-color: $-White;
+            color           : $-gray-300;
+        }
+
+        &.nofill {
+            color: $-gray-300;
+        }
+    }
+
+    &.enable {
+
+        &.fill {
+            background-color: $-Orange-300;
+        }
+
+        &.outline {
+            border          : 1.5px solid $-Orange-300;
+            background-color: $-White;
+            color           : $-Orange-300;
+        }
+
+        &.nofill {
+            color: $-Orange-300;
+        }
+    }
+
+    &.hover {
+
+        &.fill {
+            background-color: $-Orange-400;
+        }
+
+        &.outline {
+            border          : 1.5px solid $-Orange-400;
+            background-color: $-Orange-50;
+            color           : $-Orange-400;
+        }
+
+        &.nofill {
+            color: $-Orange-400;
+        }
+    }
+
+    &.pressing {
+
+        &.fill {
+            background-color: $-Orange-500;
+        }
+
+        &.outline {
+            border          : 1.5px solid $-Orange-500;
+            background-color: $-Orange-50;
+            color           : $-Orange-500;
+        }
+
+        &.nofill {
+            color: $-Orange-500;
+        }
+    }
+
+    &.tag {
+        color        : $-White !important;
+        height       : 32px !important;
+        border-radius: 32px !important;
+
+        &.disable {
+            border          : 1px solid $-gray-200;
+            background-color: $-gray-200;
+            cursor          : none;
+        }
+
+        &.enable {
+            background-color: $-Orange-300;
+        }
+
+        &.hover {
+            background-color: $-Orange-400;
+        }
+
+        &.pressing {
+            background-color: $-Orange-500;
+        }
+    }
+
 }

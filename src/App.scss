@@ -1,0 +1,20 @@
+@import './varRootStyle/varColor.scss';
+
+.App-container {
+    display       : flex;
+    flex-direction: row;
+
+    & .title {
+        color        : $-Orange-500;
+        font-weight  : 700;
+        font-size    : 24px;
+        line-height  : 36px;
+        margin-bottom: 16px;
+    }
+
+    & .right-content {
+        width           : 1240px;
+        background-color: $-gray-50;
+        padding         : 0 24px;
+    }
+}

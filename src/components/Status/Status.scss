@@ -1,0 +1,40 @@
+@import '../../varRootStyle/varColor.scss';
+
+.Status-container {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+    gap            : 4px;
+    font-size      : 14px;
+    line-height    : 21px;
+    font-weight    : 400;
+    color          : $-gray-400;
+
+    & .icon {
+        width           : 8px;
+        height          : 8px;
+        background-color: $-green;
+        border-radius   : 50%;
+
+        &.gray {
+            background-color: #6C7585;
+        }
+
+        &.green {
+            background-color: $-green;
+        }
+
+        &.blue {
+            background-color: $-blue;
+        }
+
+        &.red {
+            background-color: #EC3740;
+        }
+    }
+
+    & .connect {
+        color  : $-gray-800;
+        opacity: 0.8;
+    }
+}

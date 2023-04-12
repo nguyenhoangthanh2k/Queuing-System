@@ -20,23 +20,16 @@ function Login() {
                 <div id='form-login'>
                     <div className="form-field username">
                         <label htmlFor="username">Tên đăng nhập*</label>
-                        <Input Status='Hover' Id='username' className={isActionInput ? isActionInput : ''} />
+                        <Input Type='text' Id='username' ClassName={isActionInput ? isActionInput : ''} />
 
                         {/* <input type="text" id='username' className={isActionInput ? isActionInput : ''} /> */}
                     </div>
 
                     <div className="form-field password">
                         <label htmlFor="password">Mật khẩu*</label>
-                        {/* <div className="input-password">
-                            <input type={isShowPassword ? 'text' : 'password'}
-                                id='password'
-                                className={isActionInput ? isActionInput : ''} />
-                            <span onClick={handleShowHidePassword} className='icon-eye-slash'>
-                                {isShowPassword ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
-                            </span>
-                        </div> */}
-                        <Input Id='password' Type='password' Style='Icon' PositionIcon='right' Status='Hover'
-                            className={isActionInput ? isActionInput : ''}
+
+                        <Input Id='password' Type='password' Style='icon' PositionIcon='right'
+                            ClassName={isActionInput ? isActionInput : ''}
                         />
 
                     </div>
@@ -45,13 +38,13 @@ function Login() {
                             <span className='forget-password'>Quên mật khẩu?</span>
 
                             <div className='confirm'>
-                                <Button content="Đăng nhập" className="btn-login" />
+                                <Button Content="Đăng nhập" Size='small' Type='hover' Skin='fill' ClassName="btn-login" />
                             </div>
                         </> : <>
                             <p className='alert-confirm'><AiOutlineExclamationCircle className='icon-infor' />Sai mật khẩu hoặc tên đăng nhập</p>
 
                             <div className='confirm-fail'>
-                                <Button content="Đăng nhập" className="btn-login" />
+                                <Button Content="Đăng nhập" Size='small' Type='hover' Skin='fill' ClassName="btn-login" />
                                 <span className='forget-password'>Quên mật khẩu?</span>
                             </div>
                         </>
